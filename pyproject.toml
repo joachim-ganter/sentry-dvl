@@ -33,8 +33,9 @@ dev   = ["pytest>=7", "pandas>=2.0"]
 bench = ["pandas>=2.0"]
 
 [project.urls]
-"Paper (Zenodo)" = "https://doi.org/10.5281/zenodo.20490643"
-"DOI"            = "https://doi.org/10.5281/zenodo.20490643"
+"Paper (Zenodo)" = "https://doi.org/10.5281/zenodo.20677551"
+"DOI"            = "https://doi.org/10.5281/zenodo.20677551"
+"GitHub"         = "https://github.com/joachim-ganter/sentry-dvl"
 
 [project.scripts]
 sentry-dvl = "sentry_dvl.cli:main"
