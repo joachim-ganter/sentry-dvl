@@ -8,25 +8,28 @@ def main():
     parser = argparse.ArgumentParser(
         prog="sentry-dvl",
         description="SENTRY-DVL: Dokument-Verifikations-Layer für LLM-Ausgaben",
-        epilog="DOI: 10.5281/zenodo.20490643"
+        epilog="DOI: 10.5281/zenodo.20677551"
     )
     sub = parser.add_subparsers(dest="befehl")
 
+    # sentry-dvl check
     p_check = sub.add_parser("check", help="Einzelne Prüfung ausführen")
     p_check.add_argument("--kontext", required=True, help="Referenztext")
     p_check.add_argument("--antwort", required=True, help="LLM-Antwort")
     p_check.add_argument("--kein-nli", action="store_true", help="NLI-Modell deaktivieren")
 
+    # sentry-dvl benchmark
     p_bench = sub.add_parser("benchmark", help="Vollständigen Benchmark ausführen")
     p_bench.add_argument("--kein-nli", action="store_true", help="NLI-Modell deaktivieren")
 
+    # sentry-dvl info
     sub.add_parser("info", help="Version und DOI anzeigen")
 
     args = parser.parse_args()
 
     if args.befehl == "info" or args.befehl is None:
         print("SENTRY-DVL v1.2.0")
-        print("DOI: 10.5281/zenodo.20490643")
+        print("DOI: 10.5281/zenodo.20677551")
         print("Lizenz: AGPL-3.0")
         print("Autor: JoAchim Ganter")
         print("Kommerzielle Lizenz: jo.ganter@googlemail.com")
