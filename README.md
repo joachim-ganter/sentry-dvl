@@ -124,7 +124,7 @@ Anfragen an: **jo.ganter@googlemail.com**
   title     = {SENTRY-DVL: Cascaded Hybrid Guardrail Architecture
                for LLM Fact-Verification},
   year      = {2025},
-  doi       = {10.5281/zenodo.20490643},
+  doi       = {10.5281/zenodo.20677551},
   publisher = {Zenodo}
 }
 ```
