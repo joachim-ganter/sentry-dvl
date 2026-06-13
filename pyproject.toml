@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "sentry-dvl"
+version = "1.2.0"
+description = "SENTRY-DVL: Cascaded Hybrid Guardrail Architecture for LLM Fact-Verification"
+readme = "README.md"
+license = { text = "AGPL-3.0-only" }
+requires-python = ">=3.9"
+keywords = ["llm", "guardrail", "nlp", "verification", "safety", "eu-ai-act", "hallucination"]
+authors = [
+    { name = "JoAchim Ganter", email = "jo.ganter@googlemail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+]
+dependencies = [
+    "numpy>=1.24",
+    "sentence-transformers>=2.7",
+    "transformers>=4.40",
+    "torch>=2.0",
+]
+
+[project.optional-dependencies]
+dev   = ["pytest>=7", "pandas>=2.0"]
+bench = ["pandas>=2.0"]
+
+[project.urls]
+"Paper (Zenodo)" = "https://doi.org/10.5281/zenodo.20490643"
+"DOI"            = "https://doi.org/10.5281/zenodo.20490643"
+
+[project.scripts]
+sentry-dvl = "sentry_dvl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sentry_dvl*"]
