@@ -2,7 +2,7 @@
 
 **Cascaded Hybrid Guardrail Architecture for LLM Fact-Verification**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20490643.svg)](https://doi.org/10.5281/zenodo.20490643)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20677551.svg)](https://doi.org/10.5281/zenodo.20677551)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
